@@ -1,5 +1,20 @@
-from discord.ext import commands
+
+import ast
+import asyncio
+import cv2
+from datetime import datetime, timedelta, timezone
+import math
 import os
+import random
+import re
+import signal
+import sys
+import traceback
+
+import discord
+from discord.ext import tasks, commands
+import psutil
+import psycopg2, psycopg2.extras
 import traceback
 
 client = discord.Client(intents=discord.Intents.all())
