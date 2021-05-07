@@ -5,6 +5,9 @@ import traceback
 client = discord.Client
 token = os.environ['DISCORD_BOT_TOKEN']
 
+@clinent.event
+async def on_ready():
+    print("Ready!!")
 
 @client.event
 async def on_message(msg):
