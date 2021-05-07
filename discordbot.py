@@ -28,7 +28,7 @@ async def on_ready():
 async def on_message(msg):
     if msg.content.startswith("t."):
         if msg.content == "t.ping":
-        await msg.channel.send("Pong!!");
+            await msg.channel.send("Pong!!");
 
 
 client.run(token)
