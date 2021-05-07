@@ -20,7 +20,7 @@ import traceback
 client = discord.Client(intents=discord.Intents.all())
 token = os.environ['DISCORD_BOT_TOKEN']
 
-@clinent.event
+@client.event
 async def on_ready():
     print("Ready!!")
 
